@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video
+      width="320px"
+      height="320px"
+      controls
+      src="0119.mp4"
+      type="video/mp4"
+    ></video>
+
+    <audio src="./audio/EmSeQuen-HoaMinzy-8870910.mp3" controls></audio>
+
+    <!-- chữa bài tập :   chueyen 6 hàng thành 1 hàng -->
+    <table>
+      <thead>
+        <tr>
+          <th>hàng 1 cot 1</th>
+          <th>hàng 1 cot 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">hang 2 cot 1</td>
+          <td>ngodinhphuoc</td>
+        </tr>
+        <tr>
+          <!-- <td>hang 3 cot 1</td> -->
+          <td>ngodinhphuoc</td>
+        </tr>
+        <tr>
+          <!-- <td>hang 4 cot 1</td> -->
+          <td>ngodinhphuoc</td>
+        </tr>
+
+        <tr>
+          <!-- <td>hang 5 cot 1</td> -->
+          <td>ngodinhphuoc</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="https://www.w3schools.com/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+      <input type="time" id="ltime" name="Thoi gian" /><br /><br />
+      <button type="submit">Gửi</button>
+    </form>
+    <br />
+    <form action="https://www.w3schools.com/action_page.php">
+      <label for="ftl">Tài liệu:</label><br />
+      <input type="file" id="ftl" />
+      <br />
+      <br />
+      <button type="submit">Gửi</button>
+    </form>
+
+    <br />
+    <!-- check box   -->
+    <!-- Chú ý nên để name : language để nhận biết câu hỏi cho dê xử lí BE-->
+    <!-- Name khác nhau như câu hỏi khác nhau để dễ xử lí  -->
+    <p>Những ngôn ngữ lập trình bạn dã chọn:</p>
+    <form action="https://www.w3schools.com/action_page.php">
+      <label for="fname">Ngôn ngữ C</label>
+      <input type="checkbox" id="fname" name="cauhoi0" value="C" /><br />
+      <label for="lname">Ngôn ngữ Java</label>
+      <input type="checkbox" id="fname" name="cauhoi0" value="java" />
+      <br />
+      <label for="lname">Ngôn ngữ Nodejs:</label>
+      <input type="checkbox" id="fname" name="cauhoi0" value="node" /><br />
+      <br />
+      <p>Những ngôn ngữ lập trình bạn dã chọn:</p>
+      <label for="fname">Ngôn ngữ C</label>
+      <input type="checkbox" id="fname" name="cauhoi1" value="C" /><br />
+      <label for="lname">Ngôn ngữ Java</label>
+      <input type="checkbox" id="fname" name="cauhoi1" value="java" />
+      <br />
+      <label for="lname">Ngôn ngữ Nodejs:</label>
+      <input type="checkbox" id="fname" name="cauhoi1" value="node" /><br />
+      <br />
+      <!-- Radio  -->
+      <p>Những ngôn ngữ lập trình bạn dã chọn:</p>
+      <label for="fname">Ngôn ngữ C</label>
+      <input type="radio" id="fname" name="cauhoi3" value="C" /><br />
+      <label for="lname">Ngôn ngữ Java</label>
+      <input type="radio" id="fname" name="cauhoi3" value="java" />
+      <br />
+      <label for="lname">Ngôn ngữ Nodejs:</label>
+      <input type="radio" id="fname" name="cauhoi3" value="node" /><br />
+      <br />
+
+      <button type="submit">Gửi</button>
+    </form>
+  </body>
+</html>

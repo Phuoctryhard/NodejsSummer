@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Phần 7: display -->
+    <!-- <style>
+      .inline {
+        border: 1px solid red;
+        background-color: yellow;
+       
+      }
+
+      .inline-block {
+        background-color: yellow;
+        display: inline-block;
+        width: 300px;
+      }
+
+      .block {
+        background-color: yellow;
+        display: block;
+        width: 300px;
+      }
+      .visibility {
+        visibility: hidden;
+      }
+
+      div + p {
+        background-color: red;
+      }
+    </style>
+    
+    <p><i class="fa-brands fa-facebook"></i> FaceBook</p>
+    <p>Telegram</p>
+    <p>
+      Cựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="visibility">inline</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặm
+    </p>
+
+    <p>
+      Cựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="inline">inline</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặm
+    </p>
+
+    <p>
+      Cựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="inline-block">inline-block</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặm
+    </p>
+    <p>
+      Cựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="block">block</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặm
+    </p> -->
+
+    <!-- Phần 8 Bộ chọn tổ hợp 
+    1. Anh chị em liền kề : ví dụ div + p => lấy duy nhất thk p kề và cùng caaos div
+    2. Anh chị em chung : 
+    3 Bộ chọn con a > b
+    4 Bộ chọn hậu duệ a b{} chọn all phần tử b trong a
+
+
+     /* mặc định z -inex = 0 : khi hay ko ghi cũng dc  */
+    -->
+    <!-- style -->
+    <!-- <style>
+      /* div + p {
+        background-color: red;
+      } */
+      /* div ~ p {
+        background-color: yellow;
+      } */
+
+      /* div > p {
+        background-color: yellow;
+      } */
+
+      div p {
+        background-color: yellow;
+      }
+    </style>
+    <br />
+    <p>Noi dung 1</p>
+    <div class="">
+      <p>Noi dung 2</p>
+      <p>Noi dung 3</p>
+      <section>
+        <p>Noi dung section 1</p>
+        <p>Noi dung section 2</p>
+        <p>Noi dung section 3</p>
+        <article>
+          <p>Noi dung article 1</p>
+          <p>Noi dung article 2</p>
+          <p>Noi dung article 3</p>
+        </article>
+      </section>
+    </div>
+    <p>Noi dung 2 Bộ chọn anh chị em liền kề div</p>
+    <p>Noi dung 3</p>
+    <p>Noi dung 4</p> -->
+
+    <!-- Phần 9  position  
+    Mặc định là static  
+    fixed : vi trị so sánh với màn hình, khung hình chúng ta, use top left bottom, right oki 
+    sticky : relative + fixed . Khi cuộn đến nó thì nó thành fix, khi mà chưa thì thành relative 
+
+    -->
+    <style>
+      .box {
+        background-color: yellow;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+      }
+      .box2 {
+        position: relative;
+      }
+      .box4 {
+        position: fixed;
+        /* mặc định z -inex = 0 : khi hay ko ghi cũng dc  */
+        background-color: red;
+        display: block;
+        width: 100%;
+        height: 100px;
+        /* top: 0;
+        left: 0; */
+        text-align: center;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      .header {
+        background-color: blue;
+        text-align: center;
+        padding: 10px;
+        /* position: fixed; */
+        position: sticky;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+      }
+    </style>
+    <p>
+      aCựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="inline">inline</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặmcvsfvsfv
+    </p>
+    <div class="header">Header</div>
+    <div class="box">1</div>
+    <div class="box box2">
+      2
+      <div class="box4">Header</div>
+    </div>
+    <div class="box">3</div>
+    <p style="height: 1000px">
+      Cựu nhà báo nổi tiếng dặn dò con gái nhỏ 9 bài học sâu sắc ...
+      <span class="inline">inline</span>
+      Chu Thanh Huyền sinh con trai đầu lòng, Quang Hải nửa đêm quần đùi áo ba
+      lỗ cặm
+    </p>
+  </body>
+</html>
+
+<!-- ở z-index : element nằm sau thì chồng element trước , sau đề trước -->
